@@ -1,10 +1,11 @@
 import React from 'react';
-import './App.css';
+//import './App.css';
+import SideBar from './sideBar'
 
 function App() {
   return (
-    <div className="App">
-
+    <div className="flex">
+      <SideBar/>
     </div>
   );
 }
