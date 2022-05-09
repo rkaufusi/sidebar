@@ -2,13 +2,14 @@ import React from 'react'
 import {BsPlus, BsFillLightningFill, BsGearFill} from 'react-icons/bs'
 import {FaFire, FaPoo} from 'react-icons/fa'
 
-import { IconType } from 'react-icons'
-
-const SideBarIcon = ({icon}: any) => {
+const SideBarIcon = ({icon, text = 'tooltip 💡'}: any) => {
     console.log(icon)
     return (
-        <div className="sidebar-icon">
+        <div className="sidebar-icon group">
             {icon}
+            <span className="sidebar-tooltip group-hover:scale-100">
+                {text}
+            </span>
         </div>
     )
 }
